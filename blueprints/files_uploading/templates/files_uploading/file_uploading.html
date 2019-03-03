@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+    {% if (uploaded_files) %}
+        Uploaded files:
+
+        <ul>
+            {% for file in uploaded_files %}
+                <li>{{ file }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" name="submit">
+    </form>
+
+</body>
+</html>
