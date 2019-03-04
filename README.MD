@@ -5,7 +5,13 @@ This project is a simple example of working with Flask framework and writing tes
 
 ## Installation
 
-To install run: <br>
+To create an environment run: <br>
+`python3 -m venv venv`
+
+To activate the environment run: <br>
+`. venv/bin/activate`
+
+To install dependencies run: <br>
 `pip install -r requirements.txt`
 
 
@@ -16,7 +22,7 @@ After installation, you need to create configuration files in the following plac
 Examples will be located in same places.
 
 To generate a secret key you can run: <br>
-`python -c 'import os; print(os.urandom(16))'`
+`python3 -c 'import os; print(os.urandom(16))'`
 
 ## Requests
 
